@@ -1854,3 +1854,126 @@ body::before {
     grid-template-columns: 1fr;
   }
 }
+
+/* Home hero compatibility and alignment pass */
+.site-header {
+  min-height: 72px;
+  padding: 12px clamp(24px, 3.4vw, 68px);
+}
+
+.brand-logo {
+  width: clamp(150px, 9.5vw, 188px);
+}
+
+.home-video-hero {
+  min-height: calc(100svh - 72px);
+  align-items: center;
+  padding:
+    clamp(36px, 5vh, 72px)
+    clamp(24px, 3.4vw, 68px)
+    clamp(28px, 5vh, 64px);
+}
+
+.home-video-hero::before {
+  background:
+    linear-gradient(90deg, rgba(8, 8, 8, 0.96) 0%, rgba(8, 8, 8, 0.82) 34%, rgba(8, 8, 8, 0.35) 72%, rgba(8, 8, 8, 0.18) 100%),
+    linear-gradient(0deg, rgba(8, 8, 8, 0.34), rgba(8, 8, 8, 0.1));
+}
+
+.home-video-hero__copy {
+  width: min(44vw, 720px);
+  max-width: 720px;
+  margin: 0;
+}
+
+.home-video-hero__copy .eyebrow {
+  margin-bottom: clamp(14px, 2vh, 24px);
+  color: rgba(255, 255, 255, 0.18);
+}
+
+.home-video-hero__copy h1 {
+  max-width: 680px;
+  font-size: clamp(70px, 7.1vw, 138px);
+  line-height: 0.88;
+}
+
+.home-video-hero__copy > p:not(.eyebrow) {
+  width: min(100%, 650px);
+  margin: clamp(24px, 3vh, 34px) 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(19px, 1.35vw, 25px);
+  line-height: 1.58;
+}
+
+.home-capabilities {
+  margin-top: clamp(26px, 4vh, 42px);
+}
+
+.home-capabilities span {
+  min-height: 40px;
+  padding: 0 16px;
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.home-video-hero .actions {
+  margin-top: clamp(24px, 3vh, 34px);
+}
+
+.home-video-hero .button {
+  min-width: 172px;
+  min-height: 48px;
+  justify-content: center;
+}
+
+@media (max-width: 1180px) {
+  .home-video-hero__copy {
+    width: min(62vw, 680px);
+  }
+
+  .home-video-hero__copy h1 {
+    font-size: clamp(58px, 9vw, 110px);
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: auto;
+    gap: 14px;
+    padding: 14px 18px;
+  }
+
+  .brand-logo {
+    width: 146px;
+  }
+
+  .main-nav {
+    gap: 8px 16px;
+    font-size: 12px;
+  }
+
+  .home-video-hero {
+    min-height: calc(100svh - 118px);
+    padding: 42px 18px;
+  }
+
+  .home-video-hero__copy {
+    width: 100%;
+  }
+
+  .home-video-hero__copy h1 {
+    font-size: clamp(52px, 17vw, 84px);
+  }
+
+  .home-video-hero__copy > p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .home-video-hero .actions {
+    gap: 10px;
+  }
+
+  .home-video-hero .button {
+    min-width: 0;
+    flex: 1 1 160px;
+  }
+}

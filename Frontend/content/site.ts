@@ -247,20 +247,20 @@ export const siteContent = {
         videoEmbedUrl: "https://www.youtube.com/embed/pZIW7H1QIiw"
       },
       {
-        title: "CG Feature Film",
+        title: "Animation Feature Film",
         category: "Films",
-        format: "Feature Film",
+        format: "Animation Feature Film",
         status: "Video available",
-        network: "YouTube",
+        network: "Kartun Studios",
         year: "Published",
         source: "Added from provided YouTube feature film link",
-        legacyCategory: "Films",
+        legacyCategory: "Animation Feature Film",
         image: "/images/project_image2.jpg",
         description:
-          "CG feature film showcase added to the Shows page with an in-page player.",
+          "Animation feature film produced by Kartun Studios and presented with an in-page player.",
         details:
           "This video is embedded directly inside the website and starts at the requested timestamp.",
-        videoLabel: "Play CG feature film",
+        videoLabel: "Play animation feature film",
         videoUrl: "",
         videoEmbedUrl: "https://www.youtube.com/embed/tiHfnC2KTYg?start=156"
       },

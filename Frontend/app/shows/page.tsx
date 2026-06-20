@@ -50,20 +50,6 @@ export default function ShowsPage() {
               <div className="show-info-card__body">
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
-                <dl className="show-info-card__facts">
-                  <div>
-                    <dt>Network</dt>
-                    <dd>{item.network}</dd>
-                  </div>
-                  <div>
-                    <dt>Year</dt>
-                    <dd>{item.year}</dd>
-                  </div>
-                  <div>
-                    <dt>Legacy category</dt>
-                    <dd>{item.legacyCategory}</dd>
-                  </div>
-                </dl>
               </div>
             </article>
           );

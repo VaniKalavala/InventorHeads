@@ -1670,7 +1670,7 @@ body::before {
 }
 
 .studio-intro__art img {
-  width: min(100%, 560px);
+  width: min(100%, 644px);
   height: auto;
   object-fit: contain;
 }

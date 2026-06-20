@@ -6,6 +6,7 @@ const showTabs = [
   { label: "Shows", href: "/shows" },
   { label: "TV Shows", href: "/shows#tv-shows" },
   { label: "Films", href: "/shows#films" },
+  { label: "CG Feature Film", href: "/shows#cg-feature-film" },
   { label: "Short Film", href: "/shows#short-film" },
   { label: "Commercial", href: "/shows#tv-commercial" },
   { label: "Documentry", href: "/shows#documentry" }

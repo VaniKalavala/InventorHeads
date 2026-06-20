@@ -244,6 +244,24 @@ export const siteContent = {
         videoEmbedUrl: "https://www.youtube.com/embed/pZIW7H1QIiw"
       },
       {
+        title: "CG Feature Film",
+        category: "Films",
+        format: "Feature Film",
+        status: "Video available",
+        network: "YouTube",
+        year: "Published",
+        source: "Added from provided YouTube feature film link",
+        legacyCategory: "Films",
+        image: "/images/project_image2.jpg",
+        description:
+          "CG feature film showcase added to the Shows page with an in-page player.",
+        details:
+          "This video is embedded directly inside the website and starts at the requested timestamp.",
+        videoLabel: "Play CG feature film",
+        videoUrl: "",
+        videoEmbedUrl: "https://www.youtube.com/embed/tiHfnC2KTYg?start=156"
+      },
+      {
         title: "Short Film",
         category: "Short Film",
         format: "Short Film",

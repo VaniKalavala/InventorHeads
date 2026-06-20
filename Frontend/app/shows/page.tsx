@@ -1,16 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { getCollection, getPage } from "@/lib/cms";
-
-const showTabs = [
-  { label: "Shows", href: "/shows" },
-  { label: "TV Shows", href: "/shows#tv-shows" },
-  { label: "Films", href: "/shows#films" },
-  { label: "CG Feature Film", href: "/shows#cg-feature-film" },
-  { label: "Short Film", href: "/shows#short-film" },
-  { label: "Commercial", href: "/shows#tv-commercial" },
-  { label: "Documentry", href: "/shows#documentry" }
-];
 
 export default function ShowsPage() {
   const page = getPage("shows");
@@ -20,14 +9,6 @@ export default function ShowsPage() {
     <section className="legacy-shows" style={{ backgroundImage: `url(${page.heroImage})` }}>
       <div className="legacy-shows__shade" />
       <div className="legacy-shows__inner">
-        <nav className="legacy-subnav" aria-label="Show categories">
-          {showTabs.map((item) => (
-            <Link key={item.href} href={item.href}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
         <div className="legacy-page-title legacy-page-title--shows">
           <p>Inventor Heads</p>
           <h1>{page.title}</h1>

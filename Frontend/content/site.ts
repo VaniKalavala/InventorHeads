@@ -1,10 +1,12 @@
 export const siteContent = {
   navigation: [
-    { label: "About", href: "/about" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Shows", href: "/shows" },
+    { label: "Services", href: "/services" }
+  ],
+  footerNavigation: [
+    { label: "About", href: "/about" },
     { label: "Technology", href: "/technology" },
-    { label: "Services", href: "/services" },
     { label: "Careers", href: "/careers" },
     { label: "Contact", href: "/contact" }
   ],

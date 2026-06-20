@@ -855,6 +855,21 @@ img {
   text-align: right;
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footer-nav a:hover {
+  color: var(--gold);
+}
+
 /* Cinematic VFX studio visual refresh */
 body {
   background:
@@ -1168,6 +1183,10 @@ body::before {
 
   .site-footer address {
     text-align: left;
+  }
+
+  .footer-nav {
+    justify-content: flex-start;
   }
 }
 

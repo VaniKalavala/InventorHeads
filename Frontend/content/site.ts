@@ -28,7 +28,7 @@ export const siteContent = {
       title: "Portfolio",
       summary:
         "Selected work and showreel material from the studio, migrated from the original WordPress portfolio templates.",
-      heroImage: "/images/portfolio.jpg"
+      heroImage: "/images/vfx-breakdown-scene.png"
     },
     shows: {
       title: "Shows",

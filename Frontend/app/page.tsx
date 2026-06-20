@@ -1,20 +1,8 @@
 import Link from "next/link";
 import { ContentCard } from "@/components/content-card";
+import { HomeVideoBackground } from "@/components/home-video-background";
 import { SectionHeading } from "@/components/section-heading";
 import { getCollection, getPage } from "@/lib/cms";
-
-const homeVideos = [
-  {
-    title: "Feature Film",
-    embedUrl: "https://www.youtube.com/embed/pZIW7H1QIiw?autoplay=1&mute=1&controls=0&playsinline=1&rel=0&loop=1&playlist=pZIW7H1QIiw",
-    description: "Film showcase playing directly inside the Inventor Heads website."
-  },
-  {
-    title: "Production Reel",
-    embedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU",
-    description: "A production and pre-production video reel embedded on the home page."
-  }
-];
 
 export default function HomePage() {
   const page = getPage("home");
@@ -25,13 +13,7 @@ export default function HomePage() {
   return (
     <>
       <section className="home-video-hero">
-        <div className="home-video-hero__background" aria-hidden="true">
-          <iframe
-            src={homeVideos[0].embedUrl}
-            title="Inventor Heads autoplay background video"
-            allow="autoplay; encrypted-media; picture-in-picture; web-share"
-          />
-        </div>
+        <HomeVideoBackground />
         <div className="home-video-hero__copy">
           <p className="eyebrow">{page.eyebrow}</p>
           <h1>Inventor Heads creates visual worlds.</h1>
@@ -53,24 +35,6 @@ export default function HomePage() {
               Watch Shows
             </Link>
           </div>
-        </div>
-        <div className="home-video-slider" aria-label="Home video slider">
-          {homeVideos.slice(1).map((video) => (
-            <article className="home-video-slide" key={video.title}>
-              <div className="home-video-slide__player">
-                <iframe
-                  src={video.embedUrl}
-                  title={`${video.title} video player`}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-              <div className="home-video-slide__body">
-                <h2>{video.title}</h2>
-                <p>{video.description}</p>
-              </div>
-            </article>
-          ))}
         </div>
       </section>
       <section className="section section--white">

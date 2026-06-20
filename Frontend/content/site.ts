@@ -283,24 +283,6 @@ export const siteContent = {
         videoEmbedUrl: "https://www.youtube.com/embed/Niw5MO1flQI"
       },
       {
-        title: "TV Commercial",
-        category: "Tv Commercial",
-        format: "Category Archive",
-        status: "Legacy category",
-        network: "Multiple",
-        year: "Ongoing",
-        source: "Recovered from shows.php category filters",
-        legacyCategory: "Tv Commercial",
-        image: "/images/show3.jpg",
-        description:
-          "Legacy Shows page category for commercial and advertising work.",
-        details:
-          "The old page used the category name Tv Commercial. This keeps the original naming so imported posts can map cleanly.",
-        videoLabel: "View category",
-        videoUrl: "",
-        videoEmbedUrl: ""
-      },
-      {
         title: "Documentry",
         category: "Documentry",
         format: "Factual",

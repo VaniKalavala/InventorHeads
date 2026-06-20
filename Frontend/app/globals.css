@@ -1560,3 +1560,351 @@ body::before {
     justify-self: start;
   }
 }
+
+/* Editorial VFX studio direction inspired by large studio sites, customized for Inventor Heads */
+:root {
+  --bg: #f5f5f3;
+  --surface: #ffffff;
+  --ink: #111111;
+  --muted: #626262;
+  --line: #d8d8d4;
+  --blue: #111111;
+  --gold: #707070;
+  --shadow: 0 20px 55px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background: #f5f5f3;
+  color: #111111;
+  font-family:
+    Inter, Arial, Helvetica, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body::before {
+  display: none;
+}
+
+.site-header {
+  background: rgba(245, 245, 243, 0.92);
+  border-bottom: 1px solid #d8d8d4;
+  box-shadow: none;
+}
+
+.brand-logo {
+  filter: grayscale(1) contrast(1.12);
+}
+
+.main-nav {
+  gap: 8px 28px;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-nav a::after {
+  height: 3px;
+  background: #111111;
+}
+
+.home-video-hero {
+  min-height: calc(100vh - 78px);
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.22fr);
+  background:
+    linear-gradient(90deg, rgba(17, 17, 17, 0.92), rgba(17, 17, 17, 0.72)),
+    url("/images/inventor-slide.jpg") center / cover;
+  color: #ffffff;
+  border-bottom: 0;
+}
+
+.home-video-hero__copy {
+  max-width: 680px;
+}
+
+.home-video-hero__copy h1 {
+  color: #ffffff;
+  font-size: clamp(58px, 8.7vw, 132px);
+  font-weight: 950;
+  line-height: 0.88;
+  text-transform: none;
+}
+
+.home-video-hero__copy > p:not(.eyebrow) {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(18px, 2vw, 24px);
+}
+
+.home-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.home-capabilities span {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 0 14px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home-video-slider {
+  grid-template-columns: 1fr;
+}
+
+.home-video-slide {
+  background: #f5f5f3;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.28);
+}
+
+.home-video-slide:first-child {
+  transform: translateX(-24px);
+}
+
+.home-video-slide:last-child {
+  width: min(72%, 620px);
+  justify-self: end;
+  margin-top: -52px;
+}
+
+.home-video-slide__body {
+  border-top: 1px solid #d8d8d4;
+}
+
+.home-video-slide__body h2 {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.home-video-slide__body p {
+  color: #626262;
+}
+
+.studio-intro {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(28px, 6vw, 96px);
+  align-items: end;
+}
+
+.studio-intro > p {
+  margin: 0;
+  color: #343434;
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.section,
+.section--white {
+  background: #f5f5f3;
+  color: #111111;
+}
+
+.section:nth-of-type(even) {
+  background: #ffffff;
+}
+
+.section-heading {
+  max-width: 860px;
+  padding-left: 0;
+}
+
+.section-heading::before {
+  display: none;
+}
+
+.section-heading h2,
+.page-hero h1,
+.legacy-page-title h1 {
+  color: #111111;
+  font-size: clamp(44px, 7vw, 96px);
+  font-weight: 950;
+  line-height: 0.92;
+}
+
+.section-heading p,
+.page-hero p,
+.legacy-page-title--shows span,
+.legacy-page-title--portfolio span {
+  color: #626262;
+}
+
+.eyebrow,
+.item-label,
+.legacy-page-title p,
+.portfolio-video-card__body p {
+  color: #111111;
+  font-size: 11px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.content-card,
+.portfolio-video-card,
+.show-info-card,
+.legacy-publication,
+.portfolio-reel,
+.team-profile-card,
+.panel {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #d8d8d4;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.content-card:hover,
+.portfolio-video-card:hover,
+.show-info-card:hover,
+.legacy-publication:hover {
+  border-color: #111111;
+  box-shadow: none;
+  transform: translateY(-3px);
+}
+
+.content-card__image,
+.portfolio-video-card__media,
+.show-info-card__media,
+.portfolio-reel__video {
+  background: #e4e4e1;
+}
+
+.content-card__body,
+.portfolio-video-card__body,
+.show-info-card__body,
+.team-profile-card__body {
+  background: #ffffff;
+}
+
+.content-card h2,
+.portfolio-video-card__body h2,
+.show-info-card h2,
+.legacy-publication__content h2,
+.team-profile-card__body h2 {
+  color: #111111;
+  font-weight: 950;
+}
+
+.content-card h2::after,
+.portfolio-video-card__body h2::after,
+.show-info-card h2::after {
+  width: 58px;
+  height: 2px;
+  background: #111111;
+}
+
+.content-card p,
+.portfolio-video-card__body span,
+.show-info-card p,
+.legacy-publication__body p,
+.team-profile-card__body p:not(.item-label) {
+  color: #626262;
+}
+
+.grid {
+  gap: 28px;
+}
+
+.button {
+  min-height: 46px;
+  color: #ffffff;
+  background: #111111;
+  border: 1px solid #111111;
+  border-radius: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+.button--secondary {
+  color: #ffffff;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.section .button--secondary,
+.section--white .button--secondary,
+.panel .button--secondary {
+  color: #111111;
+  border-color: #111111;
+}
+
+.page-hero__overlay,
+.legacy-shows__shade,
+.legacy-portfolio__shade,
+.legacy-technology__shade {
+  background: rgba(245, 245, 243, 0.88);
+}
+
+.page-hero__content,
+.legacy-page-title,
+.legacy-page-title--shows,
+.legacy-page-title--portfolio {
+  color: #111111;
+}
+
+.portfolio-reel {
+  grid-template-columns: minmax(280px, 0.74fr) minmax(0, 1.26fr);
+  background: #ffffff;
+}
+
+.show-info-card__facts div,
+.contact-form input,
+.contact-form textarea {
+  background: #f6f6f4;
+  border-color: #d8d8d4;
+  border-radius: 0;
+}
+
+.show-info-card__facts dt {
+  color: #111111;
+}
+
+.site-footer {
+  color: #d7d7d2;
+  background: #111111;
+  border-top: 0;
+}
+
+.site-footer strong,
+.site-footer a {
+  color: #ffffff;
+}
+
+.footer-nav {
+  color: #d7d7d2;
+  text-transform: uppercase;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .home-video-hero,
+  .studio-intro,
+  .portfolio-reel {
+    grid-template-columns: 1fr;
+  }
+
+  .home-video-slide:first-child {
+    transform: none;
+  }
+
+  .home-video-slide:last-child {
+    width: 100%;
+    margin-top: 0;
+  }
+}

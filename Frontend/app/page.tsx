@@ -19,6 +19,7 @@ const homeVideos = [
 export default function HomePage() {
   const page = getPage("home");
   const portfolio = getCollection("portfolio");
+  const shows = getCollection("shows").filter((item) => item.videoEmbedUrl).slice(0, 3);
   const services = getCollection("services").slice(0, 3);
 
   return (
@@ -26,8 +27,17 @@ export default function HomePage() {
       <section className="home-video-hero">
         <div className="home-video-hero__copy">
           <p className="eyebrow">{page.eyebrow}</p>
-          <h1>{page.title}</h1>
-          <p>{page.summary}</p>
+          <h1>Inventor Heads creates visual worlds.</h1>
+          <p>
+            Visual effects, animation, production design, and creative technology
+            for films, shows, commercials, and digital-first stories.
+          </p>
+          <div className="home-capabilities" aria-label="Studio capabilities">
+            <span>VFX</span>
+            <span>Animation</span>
+            <span>Production</span>
+            <span>Creative Tech</span>
+          </div>
           <div className="actions">
             <Link className="button" href="/portfolio">
               View Portfolio
@@ -57,28 +67,17 @@ export default function HomePage() {
         </div>
       </section>
       <section className="section section--white">
-        <div className="section-inner split">
+        <div className="section-inner studio-intro">
           <SectionHeading
-            eyebrow="Migration complete"
-            title="A modern frontend for the old WordPress site"
-            summary="The original PHP templates are now represented as typed content collections and reusable page components."
+            eyebrow="Studio"
+            title="From idea to final frame."
+            summary="Inventor Heads brings production craft, animation, visual effects, and technical workflows together for video-led storytelling."
           />
-          <div className="panel">
-            <h2>WooCommerce removed</h2>
-            <p>
-              Store templates and checkout overrides have been removed from the
-              codebase. The new site is focused on studio pages, work, services,
-              shows, technology, careers, and contact flows.
-            </p>
-            <div className="actions">
-              <Link className="button" href="/portfolio">
-                View Portfolio
-              </Link>
-              <Link className="button button--secondary" href="/contact">
-                Contact Studio
-              </Link>
-            </div>
-          </div>
+          <p>
+            We partner with filmmakers, creators, and brands to build cinematic
+            moments with a lean studio pipeline, strong art direction, and a
+            production-ready technical process.
+          </p>
         </div>
       </section>
       <section className="section">
@@ -95,6 +94,26 @@ export default function HomePage() {
                 title={item.title}
                 description={item.description}
                 image={item.image}
+                label={item.category}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section--white">
+        <div className="section-inner">
+          <SectionHeading
+            eyebrow="Latest"
+            title="Shows and films"
+            summary="Video-led projects presented as embedded, in-site players."
+          />
+          <div className="grid">
+            {shows.map((item) => (
+              <ContentCard
+                key={item.title}
+                title={item.title}
+                description={item.description}
+                videoEmbedUrl={item.videoEmbedUrl}
                 label={item.category}
               />
             ))}

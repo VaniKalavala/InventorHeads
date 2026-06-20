@@ -1,8 +1,20 @@
 import Link from "next/link";
 import { ContentCard } from "@/components/content-card";
-import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { getCollection, getPage } from "@/lib/cms";
+
+const homeVideos = [
+  {
+    title: "Feature Film",
+    embedUrl: "https://www.youtube.com/embed/pZIW7H1QIiw",
+    description: "Film showcase playing directly inside the Inventor Heads website."
+  },
+  {
+    title: "Production Reel",
+    embedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU",
+    description: "A production and pre-production video reel embedded on the home page."
+  }
+];
 
 export default function HomePage() {
   const page = getPage("home");
@@ -11,12 +23,39 @@ export default function HomePage() {
 
   return (
     <>
-      <PageHero
-        eyebrow={page.eyebrow}
-        title={page.title}
-        summary={page.summary}
-        image={page.heroImage}
-      />
+      <section className="home-video-hero">
+        <div className="home-video-hero__copy">
+          <p className="eyebrow">{page.eyebrow}</p>
+          <h1>{page.title}</h1>
+          <p>{page.summary}</p>
+          <div className="actions">
+            <Link className="button" href="/portfolio">
+              View Portfolio
+            </Link>
+            <Link className="button button--secondary" href="/shows">
+              Watch Shows
+            </Link>
+          </div>
+        </div>
+        <div className="home-video-slider" aria-label="Home video slider">
+          {homeVideos.map((video) => (
+            <article className="home-video-slide" key={video.title}>
+              <div className="home-video-slide__player">
+                <iframe
+                  src={video.embedUrl}
+                  title={`${video.title} video player`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              <div className="home-video-slide__body">
+                <h2>{video.title}</h2>
+                <p>{video.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
       <section className="section section--white">
         <div className="section-inner split">
           <SectionHeading

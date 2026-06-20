@@ -94,7 +94,7 @@ export const siteContent = {
       {
         title: "Visual Effects Breakdown",
         category: "VFX",
-        image: "/images/project_image2.jpg",
+        image: "/images/vfx-breakdown-scene.png",
         vimeoUrl: "https://vimeo.com/000000002",
         vimeoEmbedUrl: "https://player.vimeo.com/video/000000002",
         downloadLabel: "View VFX breakdown",

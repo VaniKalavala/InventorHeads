@@ -173,7 +173,7 @@ export const siteContent = {
           "The original WordPress database may contain the full Show_type post, thumbnail, excerpt, and ACF video_link. This entry preserves the title, network, year, and project note found in the PHP source.",
         videoLabel: "View show reel",
         videoUrl: "",
-        videoEmbedUrl: ""
+        videoEmbedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU"
       },
       {
         title: "Boston Town",

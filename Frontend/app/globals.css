@@ -1307,6 +1307,8 @@ body::before {
 }
 
 .home-video-hero {
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
   gap: clamp(26px, 4vw, 56px);
@@ -1318,7 +1320,39 @@ body::before {
   border-bottom: 1px solid var(--line);
 }
 
+.home-video-hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+.home-video-hero__background iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100vw, 177.78vh);
+  height: max(56.25vw, 100vh);
+  border: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.home-video-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.38)),
+    linear-gradient(0deg, rgba(17, 17, 17, 0.58), transparent 54%);
+  pointer-events: none;
+}
+
 .home-video-hero__copy {
+  position: relative;
+  z-index: 2;
   max-width: 580px;
   justify-self: end;
 }
@@ -1338,6 +1372,8 @@ body::before {
 }
 
 .home-video-slider {
+  position: relative;
+  z-index: 2;
   display: grid;
   gap: 18px;
 }
@@ -1611,9 +1647,7 @@ body::before {
 .home-video-hero {
   min-height: calc(100vh - 78px);
   grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.22fr);
-  background:
-    linear-gradient(90deg, rgba(17, 17, 17, 0.92), rgba(17, 17, 17, 0.72)),
-    url("/images/inventor-slide.jpg") center / cover;
+  background: #111111;
   color: #ffffff;
   border-bottom: 0;
 }

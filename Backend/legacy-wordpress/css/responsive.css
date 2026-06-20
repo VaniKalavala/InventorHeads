@@ -1,0 +1,80 @@
+@media screen and (max-width:768px)
+
+{
+    #sdrn_bar .sdrn_ic span
+    {
+        background:#000 !important;
+    
+}
+li.yith_magnifier_thumbnail img {
+    width: 180px !important;
+    height: 180px !important;
+    margin-left: 14% !important;
+    position: initial !important;
+    transform: translateY(0%) !important;
+}
+.yith_magnifier_gallery li {
+    float: left !important;
+}
+
+.sub-nav{position:relative;transition:transform 0.8s;padding:60px 0 0px 23px;}
+.show-title h3{color:#fff;margin-left:-410px;margin-top:15px;text-align:center;font-size:20px;}
+.single_portfolio{position:relative;margin-top:30px;margin:0px 413px 29px 29px;}
+}
+@media screen and (max-width:1000px){.single_portfolio{position:relative;margin-top:30px;margin:0px 413px 29px 29px;}
+}
+@media screen and (max-width:600px){.single_portfolio{position:relative;margin-top:30px;margin:0 215px 0 0;}}
+@media screen and (max-width:375px){.single_portfolio{position:relative;margin-top:30px;margin:0px;}}
+@media screen and (max-width:667px){.single_portfolio{position:relative;margin-top:30px;margin:0px 270px 0 0;}}
+@media screen and (max-width:415px){.single_portfolio{position:relative;margin-top:30px;margin:0px;}}
+@media screen and (max-width:385px){.single_portfolio{position:relative;margin:0px;margin-top:30px;}}
+@media screen and (max-width:320px){.padding-left-sec h3{color:#fff;position:relative;font-size:16px;margin:11px 37px 20px -2px;font-weight:500;}
+.tp-caption.medium_bg_asbestos.lfb.start{display:none;}
+.title{text-transform:uppercase;color:#fff;font-weight:100;line-height:36px;font-size:29px;position:relative;}
+.about_inventor h5{font-size:20px;line-height:30px;font-weight:400;margin-top:20px;display:block;}
+.each_portfolio.wow.fadeInDown{margin:0 -64px 0 0;}
+.about_inventor h3{font-size:18px;line-height:27px;margin:-25px 0px 7px 0px;}
+.about_inventor p{color:#6d6d6d;font-size:13px;line-height:25px;}
+.about_inventor h5{font-size:18px;line-height:30px;font-weight:400;margin-top:20px;display:block;}
+.title{text-transform:uppercase;font-size:28px;color:#fff;font-weight:100;line-height:36px;position:relative;}
+}
+@media screen and (min-device-width:768px) and (max-device-width:1920px){.port-video iframe{width:77% !important;}
+}
+@media screen and (max-width:767px){section#about ,section#contact{overflow-x:hidden;}
+.publication{width:100% !important;margin-left:0px !important;}
+.panel-group{padding-left:15px !important;padding-right:15px !important;}
+.publication>.publication-image{margin-left:0px !important;}
+.publication-content>.publication-authors{line-height:25px !important;}
+ul#menu-team-menu ,ul#menu-shows-menu,#menu-technology-menu,ul#menu-services-menu{margin-left:0px !important;}
+#sdrn_bar .bar_logo{margin-top:-26px !important;top:24px !important;width:50% !important;height:auto !important;}
+#sdrn_bar .sdrn_ic span{background:#000 !important;}
+nav.main_nav{display:none !important;}
+.weight-300{display:none;}
+.two_halfs li{width:100% !important;}
+.wrapper1{float:left;width:100%;min-height:215px !important;position:relative;background-attachment:fixed;z-index:20 !important;}
+.main-video-wrapper .main-video{width:100%;height:auto !important;}
+.more-from-us{margin-top:40px !important;padding:0px 15px 0px 15px !important;margin-bottom:30px;}
+.about_inventor{margin-top:50px !important;}
+.two_halfs li:nth-child(2){padding-left:15px;padding-right:15px;margin-bottom:30px;}
+.each_portfolio{margin-bottom:-45px !important;}
+.about_inventor{padding:0 !important;padding-left:15px !important;}
+.scocial_icons ul li{width:initial !important;padding:0px 3px;}
+li.bg_img.contactbg{padding:0px 0px 0px 0px;margin-bottom:0px !important;}
+footer{line-height:20px;}
+footer .pull-right{float:left !important;margin-left:28px !important;}
+.welcome_right img{height:auto !important;}
+li.bg_img .more-from-us{padding:0px 15px 0px 15px !important;}
+.pad80{padding:0px 15px 0px 15px !important;overflow:hidden;}
+section.welcome_section{padding:20px 0px 20px 0px !important;}
+.page-content{overflow-x:hidden;padding:40px 15px 20px 15px !important;}
+.port_content{padding:0px 0px 0px 0px !important;}
+.port-video iframe{width:84% !important;padding:20px 0px !important;min-height:0px !important;}
+.page-title, .page-title-events, .page-title-news{left:-1891px !important;}
+.team-info h4 a, h6{margin-left:-22px;}
+.team-snap img{margin-left:90px !important;}
+.modal-body iframe{width:100%;}
+}
+@media screen and (max-width:1024px){.padding-left-sec h3{color:#fff;position:relative;font-size:25px;margin-bottom:40px;margin:11px 0 28px 26px;font-weight:500;font-size:23px;margin-top:30%;}
+}
+.tp-caption.medium_bg_asbestos p{color:#fffae8;text-align:right;font-weight:400;font-style:normal;font-style:italic;font-size:11px;margin:0 0 0 -76px;margin-bottom:2px;}
+.main-video-wrapper.video-size.wow.bounceInDown p{color:#f8931d;font-weight:600;font-size:10px;}}

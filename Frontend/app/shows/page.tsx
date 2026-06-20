@@ -64,10 +64,6 @@ export default function ShowsPage() {
                     <dd>{item.legacyCategory}</dd>
                   </div>
                 </dl>
-                <div className="show-info-card__details">
-                  <strong>Information</strong>
-                  <p>{item.details}</p>
-                </div>
               </div>
             </article>
           );

@@ -340,18 +340,20 @@ export const siteContent = {
     ],
     team: [
       {
-        name: "Studio Leadership",
+        name: "Ashok Kumar Reddy",
         role: "Management Team",
-        image: "/images/vani.JPG",
+        image: "/images/logo.png",
+        linkedinUrl: "https://www.linkedin.com/in/asoka-reddy-44a1213/",
         bio:
-          "Leadership and team profiles can now be managed as clean CMS records with image, role, and biography fields."
+          "Part of the Inventor Heads leadership team, guiding production, technology, and creative delivery across studio work."
       },
       {
-        name: "Creative Department",
-        role: "Production and Post",
-        image: "/images/welcome.jpg",
+        name: "Vani Kalavala",
+        role: "Management Team",
+        image: "/images/vani.JPG",
+        linkedinUrl: "https://in.linkedin.com/in/vanikalvala",
         bio:
-          "A placeholder team record ready for real migrated WordPress team data."
+          "Part of the Inventor Heads management team, supporting studio operations, creative production, and client-facing workflows."
       }
     ]
   },

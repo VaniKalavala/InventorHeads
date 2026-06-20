@@ -1,4 +1,4 @@
-import { ContentCard } from "@/components/content-card";
+import Image from "next/image";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { getCollection, getPage } from "@/lib/cms";
@@ -17,15 +17,28 @@ export default function TeamPage() {
             title="People behind the work"
             summary="The old team custom post type is represented as CMS-ready profile content."
           />
-          <div className="grid grid--two">
+          <div className="team-grid">
             {team.map((member) => (
-              <ContentCard
-                key={member.name}
-                title={member.name}
-                description={member.bio}
-                image={member.image}
-                label={member.role}
-              />
+              <article className="team-profile-card" key={member.name}>
+                <div className="team-profile-card__image">
+                  <Image src={member.image} alt={member.name} width={420} height={420} />
+                </div>
+                <div className="team-profile-card__body">
+                  <p className="item-label">{member.role}</p>
+                  <h2>{member.name}</h2>
+                  <p>{member.bio}</p>
+                  {"linkedinUrl" in member ? (
+                    <a
+                      className="button"
+                      href={member.linkedinUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      LinkedIn Profile
+                    </a>
+                  ) : null}
+                </div>
+              </article>
             ))}
           </div>
         </div>

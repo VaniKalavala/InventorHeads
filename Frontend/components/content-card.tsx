@@ -4,6 +4,7 @@ type ContentCardProps = {
   title: string;
   description: string;
   image?: string;
+  videoEmbedUrl?: string;
   label?: string;
 };
 
@@ -11,11 +12,21 @@ export function ContentCard({
   title,
   description,
   image,
+  videoEmbedUrl,
   label
 }: ContentCardProps) {
   return (
     <article className="content-card">
-      {image ? (
+      {videoEmbedUrl ? (
+        <div className="content-card__image">
+          <iframe
+            src={videoEmbedUrl}
+            title={`${title} video player`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      ) : image ? (
         <div className="content-card__image">
           <Image src={image} alt="" width={720} height={460} />
         </div>

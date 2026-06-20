@@ -108,6 +108,7 @@ export const siteContent = {
       {
         title: "Pre Production",
         image: "/images/sevices-post/pre1.png",
+        videoEmbedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU",
         description:
           "Planning, visual development, production design support, and technical preparation."
       },

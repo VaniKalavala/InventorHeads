@@ -24,6 +24,7 @@ export default function ServicesPage() {
                 title={item.title}
                 description={item.description}
                 image={item.image}
+                videoEmbedUrl={"videoEmbedUrl" in item ? item.videoEmbedUrl : undefined}
               />
             ))}
           </div>

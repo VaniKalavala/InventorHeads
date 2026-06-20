@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ContentCard } from "@/components/content-card";
 import { HomeVideoBackground } from "@/components/home-video-background";
 import { SectionHeading } from "@/components/section-heading";
@@ -43,11 +44,15 @@ export default function HomePage() {
             title="From idea to final frame."
             summary="Inventor Heads brings production craft, animation, visual effects, and technical workflows together for video-led storytelling."
           />
-          <p>
-            We partner with filmmakers, creators, and brands to build cinematic
-            moments with a lean studio pipeline, strong art direction, and a
-            production-ready technical process.
-          </p>
+          <figure className="studio-intro__art">
+            <Image
+              src="/images/studio-character-sketch.png"
+              alt="Inventor Heads character sketch"
+              width={560}
+              height={560}
+              sizes="(max-width: 860px) 90vw, 42vw"
+            />
+          </figure>
         </div>
       </section>
       <section className="section">

@@ -68,8 +68,6 @@ export default function ShowsPage() {
               <div className="show-info-card__body">
                 <div className="show-info-card__meta">
                   <span>{item.category}</span>
-                  <span>{item.format}</span>
-                  <span>{item.status}</span>
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>

@@ -1330,7 +1330,7 @@ body::before {
 
 .home-video-hero__background iframe {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   width: max(100vw, 177.78vh);
   height: max(56.25vw, 100vh);

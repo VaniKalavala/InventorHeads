@@ -15,7 +15,6 @@ export default function HomePage() {
       <section className="home-video-hero">
         <HomeVideoBackground />
         <div className="home-video-hero__copy">
-          <p className="eyebrow">{page.eyebrow}</p>
           <h1>Inventor Heads creates visual worlds.</h1>
           <p>
             Visual effects, animation, production design, and creative technology

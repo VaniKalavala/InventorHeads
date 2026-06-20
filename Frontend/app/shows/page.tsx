@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { getCollection, getPage } from "@/lib/cms";
 
 export default function ShowsPage() {
@@ -9,9 +10,40 @@ export default function ShowsPage() {
     <section className="legacy-shows" style={{ backgroundImage: `url(${page.heroImage})` }}>
       <div className="legacy-shows__shade" />
       <div className="legacy-shows__inner">
-        <div className="legacy-page-title legacy-page-title--shows">
-          <p>Inventor Heads</p>
-          <h1>{page.title}</h1>
+        <div className="shows-editorial-hero">
+          <div className="shows-editorial-hero__primary">
+            <Image
+              src="/images/project_image.jpg"
+              alt=""
+              width={820}
+              height={980}
+              priority
+            />
+          </div>
+          <div className="shows-editorial-hero__copy">
+            <p>Who we are</p>
+            <h1>Creators of Entertainment</h1>
+            <span>
+              Our team combines creativity, animation, production, and visual
+              effects to craft stories that captivate audiences. We develop
+              films, shows, short films, and digital-first entertainment with a
+              studio pipeline built for scale.
+            </span>
+            <Link className="shows-editorial-hero__button" href="/portfolio">
+              Learn more
+            </Link>
+          </div>
+          <div className="shows-editorial-hero__tile shows-editorial-hero__tile--one">
+            <Image src="/images/vfx-breakdown-scene.png" alt="" width={520} height={360} />
+          </div>
+          <div className="shows-editorial-hero__tile shows-editorial-hero__tile--two">
+            <Image src="/images/project_image1.jpg" alt="" width={520} height={360} />
+          </div>
+        </div>
+
+        <div className="shows-project-heading">
+          <p>Shows</p>
+          <h2>{page.title}</h2>
           <span>{page.summary}</span>
         </div>
 

@@ -86,7 +86,6 @@ export default function ShowsPage() {
                 <div className="show-info-card__details">
                   <strong>Information</strong>
                   <p>{item.details}</p>
-                  <small>{item.source}</small>
                 </div>
               </div>
             </article>

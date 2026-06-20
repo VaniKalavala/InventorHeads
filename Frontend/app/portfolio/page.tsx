@@ -24,9 +24,6 @@ export default function PortfolioPage() {
             <p className="eyebrow">{featured.category}</p>
             <h2>All the works shown in video are created at Inventor Heads</h2>
             <p>{featured.details}</p>
-            <a className="button" href={featured.vimeoUrl} target="_blank" rel="noreferrer">
-              Open Vimeo
-            </a>
           </div>
           <div className="portfolio-reel__video">
             <iframe
@@ -41,13 +38,7 @@ export default function PortfolioPage() {
         <section className="portfolio-video-list" aria-label="Portfolio videos">
           {portfolio.map((item) => (
             <article className="portfolio-video-card" key={item.title}>
-              <a
-                className="portfolio-video-card__media"
-                href={item.vimeoUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`Open ${item.title} on Vimeo`}
-              >
+              <div className="portfolio-video-card__media">
                 <Image src={item.image} alt="" width={520} height={330} />
                 <span className="portfolio-video-card__overlay">
                   <span className="play-button" aria-hidden="true">
@@ -55,15 +46,12 @@ export default function PortfolioPage() {
                   </span>
                   <span>Vimeo</span>
                 </span>
-              </a>
+              </div>
               <div className="portfolio-video-card__body">
                 <p>{item.category}</p>
                 <h2>{item.title}</h2>
                 <span>{item.description}</span>
                 <div className="portfolio-video-card__actions">
-                  <a href={item.vimeoUrl} target="_blank" rel="noreferrer">
-                    Watch on Vimeo
-                  </a>
                   <a href="#" aria-disabled="true">
                     {item.downloadLabel}
                   </a>

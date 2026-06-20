@@ -71,8 +71,8 @@ export const siteContent = {
         title: "Studio Showreel",
         category: "Showreel",
         image: "/images/project_image.jpg",
-        vimeoUrl: "https://vimeo.com/22554255",
-        vimeoEmbedUrl: "https://player.vimeo.com/video/22554255",
+        vimeoUrl: "",
+        vimeoEmbedUrl: "https://player.vimeo.com/video/225542556",
         downloadLabel: "Download demoreel breakdown",
         description:
           "A video-first portfolio entry carried over from the original home and portfolio pages.",

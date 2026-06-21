@@ -2026,6 +2026,115 @@ body::before {
   width: 100%;
 }
 
+.legacy-page-title--portfolio {
+  width: min(1220px, calc(100% - clamp(36px, 10vw, 180px)));
+  margin-left: clamp(28px, 5vw, 96px);
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .legacy-page-title--portfolio {
+    width: min(100% - 36px, 940px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Responsive compatibility pass */
+.legacy-page-title--portfolio {
+  width: min(1180px, calc(100% - clamp(40px, 10vw, 180px)));
+  margin-left: clamp(28px, 5.2vw, 100px);
+  margin-right: auto;
+}
+
+@media (max-width: 1280px) {
+  .portfolio-video-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .technology-market__inner {
+    grid-template-columns: minmax(280px, 0.85fr) minmax(460px, 1.15fr);
+    gap: clamp(36px, 5vw, 72px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-hero__content,
+  .legacy-page-title,
+  .legacy-page-title--shows,
+  .legacy-page-title--portfolio,
+  .legacy-shows__inner,
+  .legacy-portfolio__inner,
+  .legacy-technology__inner {
+    width: min(100% - 36px, 940px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .legacy-page-title--portfolio {
+    margin-left: 18px;
+  }
+
+  .portfolio-reel {
+    width: min(100% - 36px, 940px);
+    grid-template-columns: 1fr;
+  }
+
+  .studio-intro,
+  .technology-market__inner,
+  .technology-market__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-intro__art {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .technology-market {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .home-video-hero__copy h1,
+  .page-hero h1,
+  .legacy-page-title h1,
+  .section-heading h2 {
+    font-size: clamp(46px, 15vw, 76px);
+    line-height: 0.92;
+  }
+
+  .portfolio-video-list,
+  .grid,
+  .grid--two {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-video-card__media,
+  .content-card__image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .technology-market {
+    padding: 56px 18px;
+  }
+
+  .technology-market__panel {
+    padding: 18px;
+  }
+
+  .studio-art-slider {
+    width: min(100%, 320px);
+    height: 430px;
+  }
+}
+
 /* Technology page inline layout */
 .legacy-technology .legacy-publications {
   width: min(1120px, 100%);

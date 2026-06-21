@@ -3,11 +3,9 @@ import { ContentCard } from "@/components/content-card";
 import { HomeVideoBackground } from "@/components/home-video-background";
 import { SectionHeading } from "@/components/section-heading";
 import { StudioArtSlider } from "@/components/studio-art-slider";
-import { getCollection, getPage } from "@/lib/cms";
+import { getCollection } from "@/lib/cms";
 
 export default function HomePage() {
-  const page = getPage("home");
-  const portfolio = getCollection("portfolio");
   const shows = getCollection("shows").filter((item) => item.videoEmbedUrl).slice(0, 3);
 
   return (
@@ -44,26 +42,6 @@ export default function HomePage() {
             summary="Inventor Heads brings production craft, animation, visual effects, and technical workflows together for video-led storytelling."
           />
           <StudioArtSlider />
-        </div>
-      </section>
-      <section className="section">
-        <div className="section-inner">
-          <SectionHeading
-            eyebrow="Featured"
-            title="Portfolio"
-            summary="A cleaner structure for case studies, reels, and video-led work."
-          />
-          <div className="grid">
-            {portfolio.map((item) => (
-              <ContentCard
-                key={item.title}
-                title={item.title}
-                description={item.description}
-                image={item.image}
-                label={item.category}
-              />
-            ))}
-          </div>
         </div>
       </section>
       <section className="section section--white">

@@ -1667,13 +1667,13 @@ body::before {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: clamp(130px, 11vw, 230px);
+  padding-left: clamp(190px, 14vw, 295px);
 }
 
 .studio-art-slider {
   position: relative;
-  width: min(100%, 520px);
-  height: clamp(400px, 34vw, 560px);
+  width: min(100%, 410px);
+  height: clamp(470px, 36vw, 610px);
   display: grid;
   place-items: center;
 }

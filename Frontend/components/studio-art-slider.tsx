@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    src: "/images/studio-character-sketch.png",
+    src: "/images/studio-character-sketch-cropped.png",
     alt: "Chef character sketch"
   },
   {
-    src: "/images/studio-character-boy.png",
+    src: "/images/studio-character-boy-cropped.png",
     alt: "Boy character design sketch"
   },
   {
-    src: "/images/studio-character-businessman.png",
+    src: "/images/studio-character-businessman-cropped.png",
     alt: "Businessman character sketch"
   },
   {
-    src: "/images/studio-character-man.png",
+    src: "/images/studio-character-man-cropped.png",
     alt: "Man character sketch"
   }
 ];

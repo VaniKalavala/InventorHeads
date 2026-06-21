@@ -2770,3 +2770,12 @@ body::before {
 .legacy-portfolio__inner {
   width: 100%;
 }
+
+.legacy-portfolio--redesign .legacy-page-title--portfolio {
+  padding-top: clamp(38px, 4.5vw, 72px);
+  padding-bottom: clamp(22px, 2.8vw, 38px);
+}
+
+.legacy-portfolio--redesign .portfolio-reel {
+  margin-top: 0;
+}

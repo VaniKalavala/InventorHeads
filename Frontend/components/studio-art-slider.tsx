@@ -7,7 +7,7 @@ const slides = [
   {
     src: "/images/studio-character-sketch-cropped.png",
     alt: "Chef character sketch",
-    className: "studio-art-slider__image studio-art-slider__image--guarded"
+    className: "studio-art-slider__image studio-art-slider__image--chef"
   },
   {
     src: "/images/studio-character-boy-cropped.png",

@@ -292,7 +292,7 @@ export const siteContent = {
       {
         name: "Ashok Kumar Reddy",
         role: "Management Team",
-        image: "/images/logo.png",
+        image: "/images/ashok-kumar-reddy.png",
         linkedinUrl: "https://www.linkedin.com/in/asoka-reddy-44a1213/",
         bio:
           "Part of the Inventor Heads leadership team, guiding production, technology, and creative delivery across studio work."

@@ -2288,10 +2288,10 @@ body::before {
 /* Footer placement */
 .site-footer {
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) minmax(280px, 0.8fr) minmax(280px, 0.9fr);
+  grid-template-columns: minmax(300px, 1.35fr) minmax(300px, 0.72fr) minmax(260px, 0.58fr);
   align-items: center;
-  gap: clamp(28px, 5vw, 90px);
-  padding: 34px clamp(38px, 5vw, 76px);
+  gap: clamp(24px, 4vw, 72px);
+  padding: 34px clamp(44px, 4vw, 76px);
 }
 
 .site-footer > div {
@@ -2299,13 +2299,15 @@ body::before {
 }
 
 .footer-nav {
-  justify-self: center;
+  justify-self: end;
   justify-content: center;
+  transform: translateX(clamp(18px, 2.8vw, 54px));
 }
 
 .site-footer address {
   justify-self: end;
   text-align: right;
+  padding-right: clamp(0px, 1.2vw, 24px);
 }
 
 @media (max-width: 860px) {
@@ -2317,6 +2319,8 @@ body::before {
   .site-footer address {
     justify-self: start;
     text-align: left;
+    transform: none;
+    padding-right: 0;
   }
 }
 

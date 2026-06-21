@@ -2,7 +2,6 @@ export const siteContent = {
   navigation: [
     { label: "Portfolio", href: "/portfolio" },
     { label: "Shows", href: "/shows" },
-    { label: "Services", href: "/services" },
     { label: "Technology", href: "/technology" }
   ],
   footerNavigation: [
@@ -15,7 +14,7 @@ export const siteContent = {
       title: "Inventor Heads",
       eyebrow: "Creative technology studio",
       summary:
-        "A rebuilt digital home for the studio's portfolio, shows, services, technology work, careers, and contact workflows.",
+        "A rebuilt digital home for the studio's portfolio, shows, technology work, careers, and contact workflows.",
       heroImage: "/images/inventor-slide.jpg"
     },
     about: {
@@ -41,12 +40,6 @@ export const siteContent = {
       summary:
         "Workflow tools, streamlining systems, and production technology content formerly managed as WordPress custom post types.",
       heroImage: "/images/slide2back.jpg"
-    },
-    services: {
-      title: "Services",
-      summary:
-        "Production and post-production services presented as structured CMS entries instead of PHP query templates.",
-      heroImage: "/images/try.jpg"
     },
     careers: {
       title: "Careers",
@@ -104,33 +97,6 @@ export const siteContent = {
           "Designed to hold detailed before-and-after media once the original WordPress database export is available.",
         details:
           "This maps to the old portfolio breakdown area and can carry Vimeo embeds, downloadable PDFs, and case-study notes."
-      }
-    ],
-    services: [
-      {
-        title: "Pre Production",
-        image: "/images/sevices-post/pre1.png",
-        videoEmbedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU",
-        description:
-          "Planning, visual development, production design support, and technical preparation."
-      },
-      {
-        title: "Production",
-        image: "/images/sevices-post/pre2.png",
-        description:
-          "On-set creative and technical support for film, TV, advertising, and digital projects."
-      },
-      {
-        title: "Post Production",
-        image: "/images/sevices-post/pre3.png",
-        description:
-          "Editorial, finishing, compositing, color, and delivery workflows."
-      },
-      {
-        title: "Visual Effects",
-        image: "/images/sevices-post/pre4.png",
-        description:
-          "Shot design, compositing, cleanup, motion graphics, and environment work."
       }
     ],
     technologies: [

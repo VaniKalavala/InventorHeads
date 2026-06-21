@@ -9,7 +9,6 @@ export default function HomePage() {
   const page = getPage("home");
   const portfolio = getCollection("portfolio");
   const shows = getCollection("shows").filter((item) => item.videoEmbedUrl).slice(0, 3);
-  const services = getCollection("services").slice(0, 3);
 
   return (
     <>
@@ -82,25 +81,6 @@ export default function HomePage() {
                 description={item.description}
                 videoEmbedUrl={item.videoEmbedUrl}
                 label={item.category}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section section--white">
-        <div className="section-inner">
-          <SectionHeading
-            eyebrow="What we do"
-            title="Services"
-            summary="Migrated from the old service_type WordPress records into a CMS-ready collection."
-          />
-          <div className="grid">
-            {services.map((item) => (
-              <ContentCard
-                key={item.title}
-                title={item.title}
-                description={item.description}
-                image={item.image}
               />
             ))}
           </div>

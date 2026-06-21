@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const slides = [
   {
@@ -11,10 +11,6 @@ const slides = [
   {
     src: "/images/studio-character-boy.png",
     alt: "Boy character design sketch"
-  },
-  {
-    src: "/images/studio-character-vanz.png",
-    alt: "Vanz character design"
   },
   {
     src: "/images/studio-character-businessman.png",
@@ -30,13 +26,13 @@ export function StudioArtSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeSlide = slides[activeIndex];
 
-  const goToPrevious = () => {
-    setActiveIndex((current) => (current === 0 ? slides.length - 1 : current - 1));
-  };
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveIndex((current) => (current === slides.length - 1 ? 0 : current + 1));
+    }, 3200);
 
-  const goToNext = () => {
-    setActiveIndex((current) => (current === slides.length - 1 ? 0 : current + 1));
-  };
+    return () => window.clearInterval(timer);
+  }, []);
 
   return (
     <figure className="studio-intro__art">
@@ -50,17 +46,6 @@ export function StudioArtSlider() {
           sizes="(max-width: 860px) 90vw, 42vw"
           priority={activeIndex === 0}
         />
-        <div className="studio-art-slider__controls" aria-label="Slide controls">
-          <button type="button" onClick={goToPrevious} aria-label="Previous character image">
-            &lt;
-          </button>
-          <span>
-            {activeIndex + 1} / {slides.length}
-          </span>
-          <button type="button" onClick={goToNext} aria-label="Next character image">
-            &gt;
-          </button>
-        </div>
       </div>
     </figure>
   );

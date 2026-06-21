@@ -2776,6 +2776,11 @@ body::before {
   padding-bottom: clamp(22px, 2.8vw, 38px);
 }
 
+.legacy-portfolio--redesign .legacy-page-title--portfolio h1 {
+  font-size: clamp(56px, 7vw, 104px);
+  line-height: 0.9;
+}
+
 .legacy-portfolio--redesign .portfolio-reel {
   margin-top: 0;
 }

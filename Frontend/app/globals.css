@@ -1690,16 +1690,6 @@ body::before {
   object-fit: contain;
 }
 
-.studio-art-slider__image--guarded {
-  width: 86%;
-  height: 86%;
-}
-
-.studio-art-slider__image--chef {
-  width: 76%;
-  height: 76%;
-}
-
 .section,
 .section--white {
   background: #f5f5f3;

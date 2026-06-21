@@ -139,21 +139,21 @@ export const siteContent = {
         category: "Workflow Tools",
         image: "/images/slide2.jpg",
         description:
-          "Internal tools and repeatable pipelines for production teams."
+          "Animation planning tools for character design, shot tracking, approvals, and repeatable production handoffs."
       },
       {
         title: "Streamliner",
         category: "Streamliner",
         image: "/images/slide3.jpg",
         description:
-          "A technology content area for process automation and delivery tracking."
+          "A cleaner production flow for animation teams, keeping storyboards, assets, reviews, and delivery status moving together."
       },
       {
         title: "Pipeline Support",
         category: "Pipeline",
         image: "/images/slide1.jpg",
         description:
-          "CMS-managed technology articles replacing the old technology_type WordPress posts."
+          "Studio pipeline support for modeling, rigging, animation, lighting, compositing, and final shot delivery."
       }
     ],
     shows: [

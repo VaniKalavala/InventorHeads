@@ -2021,6 +2021,56 @@ body::before {
   width: 100%;
 }
 
+/* Technology page inline layout */
+.legacy-technology .legacy-publications {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  gap: clamp(26px, 4vw, 46px);
+}
+
+.legacy-technology .legacy-publication {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 clamp(24px, 3vw, 38px);
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #d8d8d4;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.legacy-technology .legacy-publication:hover {
+  border-color: #d8d8d4;
+  box-shadow: none;
+}
+
+.legacy-technology .legacy-publication__image {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.legacy-technology .legacy-publication__image img {
+  height: 150px;
+  border: 1px solid #d8d8d4;
+  object-fit: cover;
+}
+
+.legacy-technology .legacy-publication__content {
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  .legacy-technology .legacy-publication {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Footer placement */
 .site-footer {
   display: grid;

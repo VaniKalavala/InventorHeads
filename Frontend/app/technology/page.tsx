@@ -35,18 +35,6 @@ export default function TechnologyPage() {
                 <div className="legacy-publication__body">
                   <p>{item.description}</p>
                 </div>
-                <div className="legacy-share">
-                  <span>Share :</span>
-                  <a aria-label={`Share ${item.title} on Facebook`} href="#">
-                    f
-                  </a>
-                  <a aria-label={`Share ${item.title} on X`} href="#">
-                    x
-                  </a>
-                  <a aria-label={`Share ${item.title} by email`} href="#">
-                    @
-                  </a>
-                </div>
               </div>
             </article>
           ))}

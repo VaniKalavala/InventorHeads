@@ -63,28 +63,28 @@ export const siteContent = {
   collections: {
     portfolio: [
       {
-        title: "Studio Showreel",
-        category: "Showreel",
-        image: "/images/project_image.jpg",
+        title: "Mr.Buddy",
+        category: "TV Shows",
+        image: "/images/slide1.jpg",
         vimeoUrl: "",
         vimeoEmbedUrl: "https://player.vimeo.com/video/225542556",
-        downloadLabel: "Download demoreel breakdown",
+        downloadLabel: "View show reel",
         description:
-          "A video-first portfolio entry carried over from the original home and portfolio pages.",
+          "IP project listed in the legacy homepage slider as airing in 2018 for Pogo Network.",
         details:
-          "All the works shown in this reel are created at Inventor Heads."
+          "Mr.Buddy is carried into the portfolio from the Shows page as a featured animation property."
       },
       {
-        title: "Featured Production Work",
-        category: "Production",
-        image: "/images/project_image1.jpg",
+        title: "Animation Feature Film",
+        category: "Films",
+        image: "/images/project_image2.jpg",
         vimeoUrl: "https://vimeo.com/000000001",
         vimeoEmbedUrl: "https://player.vimeo.com/video/000000001",
-        downloadLabel: "View production reel",
+        downloadLabel: "Play animation feature film",
         description:
-          "A flexible entry for case studies, breakdowns, stills, or embedded video.",
+          "Animation feature film produced by Kartun Studios and presented with an in-page player.",
         details:
-          "Use this record for production notes, client/project metadata, final videos, stills, and technical breakdown links."
+          "Animation Feature Film is included from the Shows page as a featured portfolio project."
       },
       {
         title: "Visual Effects Breakdown",

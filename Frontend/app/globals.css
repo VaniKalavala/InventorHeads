@@ -2784,3 +2784,17 @@ body::before {
 .legacy-portfolio--redesign .portfolio-reel {
   margin-top: 0;
 }
+
+.legacy-shows--redesign .legacy-page-title--shows {
+  padding-top: clamp(38px, 4.5vw, 72px);
+  padding-bottom: clamp(22px, 2.8vw, 38px);
+}
+
+.legacy-shows--redesign .legacy-page-title--shows h1 {
+  font-size: clamp(56px, 7vw, 104px);
+  line-height: 0.9;
+}
+
+.legacy-shows--redesign .shows-feature {
+  margin-top: 0;
+}

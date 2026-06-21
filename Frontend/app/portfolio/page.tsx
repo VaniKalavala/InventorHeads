@@ -8,7 +8,7 @@ export default function PortfolioPage() {
 
   return (
     <section
-      className="legacy-portfolio"
+      className="legacy-portfolio legacy-portfolio--redesign"
       style={{ backgroundImage: `url(${page.heroImage})` }}
     >
       <div className="legacy-portfolio__shade" />

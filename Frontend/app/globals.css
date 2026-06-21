@@ -2076,6 +2076,116 @@ body::before {
   }
 }
 
+/* Technology split feature layout */
+.technology-market {
+  min-height: calc(100svh - 72px);
+  display: grid;
+  align-items: center;
+  padding: clamp(72px, 10vw, 132px) clamp(28px, 6vw, 96px);
+  background: #ffffff;
+  color: #08101d;
+}
+
+.technology-market__inner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.76fr) minmax(520px, 1.24fr);
+  align-items: center;
+  gap: clamp(48px, 7vw, 104px);
+}
+
+.technology-market__copy > p:first-child {
+  margin: 0 0 28px;
+  color: #008f87;
+  font-size: 12px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.technology-market__copy h1 {
+  max-width: 520px;
+  margin: 0;
+  color: #07101d;
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 950;
+  line-height: 1.02;
+}
+
+.technology-market__copy h1 span {
+  color: #08a9a1;
+}
+
+.technology-market__copy > p:not(:first-child) {
+  max-width: 520px;
+  margin: 28px 0 0;
+  color: #162438;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.technology-market__copy a {
+  display: inline-flex;
+  margin-top: 28px;
+  color: #006fc7;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.technology-market__panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: clamp(44px, 5vw, 64px);
+  background: #edfafa;
+}
+
+.technology-tool {
+  min-height: 180px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #d9e4ea;
+  box-shadow: 0 14px 34px rgba(8, 16, 29, 0.08);
+}
+
+.technology-tool:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.technology-tool span {
+  display: block;
+  margin-bottom: 24px;
+  color: #09aaa6;
+  font-size: 28px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.technology-tool h2 {
+  margin: 0 0 14px;
+  color: #07101d;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.1;
+}
+
+.technology-tool p {
+  margin: 0;
+  color: #162438;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+@media (max-width: 980px) {
+  .technology-market__inner,
+  .technology-market__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-tool:nth-child(3) {
+    grid-column: auto;
+  }
+}
+
 /* Footer placement */
 .site-footer {
   display: grid;

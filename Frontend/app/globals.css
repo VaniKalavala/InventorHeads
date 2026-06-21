@@ -1649,7 +1649,7 @@ body::before {
 
 .studio-intro {
   display: grid;
-  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
   gap: clamp(28px, 6vw, 96px);
   align-items: end;
 }
@@ -1665,8 +1665,9 @@ body::before {
 .studio-intro__art {
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: clamp(24px, 8vw, 160px);
 }
 
 .studio-intro__art img {

@@ -6,19 +6,23 @@ import { useEffect, useState } from "react";
 const slides = [
   {
     src: "/images/studio-character-sketch-cropped.png",
-    alt: "Chef character sketch"
+    alt: "Chef character sketch",
+    className: "studio-art-slider__image studio-art-slider__image--guarded"
   },
   {
     src: "/images/studio-character-boy-cropped.png",
-    alt: "Boy character design sketch"
+    alt: "Boy character design sketch",
+    className: "studio-art-slider__image"
   },
   {
     src: "/images/studio-character-businessman-cropped.png",
-    alt: "Businessman character sketch"
+    alt: "Businessman character sketch",
+    className: "studio-art-slider__image"
   },
   {
     src: "/images/studio-character-man-cropped.png",
-    alt: "Man character sketch"
+    alt: "Man character sketch",
+    className: "studio-art-slider__image studio-art-slider__image--guarded"
   }
 ];
 
@@ -41,6 +45,7 @@ export function StudioArtSlider() {
           key={activeSlide.src}
           src={activeSlide.src}
           alt={activeSlide.alt}
+          className={activeSlide.className}
           width={644}
           height={644}
           sizes="(max-width: 860px) 90vw, 42vw"

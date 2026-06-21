@@ -1651,7 +1651,7 @@ body::before {
   display: grid;
   grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
   gap: clamp(28px, 6vw, 96px);
-  align-items: end;
+  align-items: center;
 }
 
 .studio-intro > p {
@@ -1676,7 +1676,6 @@ body::before {
   height: clamp(400px, 34vw, 560px);
   display: grid;
   place-items: center;
-  transform: translateY(clamp(-84px, -5vw, -42px));
 }
 
 .studio-art-slider img {

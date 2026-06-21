@@ -39,13 +39,24 @@ export default function PortfolioPage() {
           {portfolio.map((item) => (
             <article className="portfolio-video-card" key={item.title}>
               <div className="portfolio-video-card__media">
-                <Image src={item.image} alt="" width={520} height={330} />
-                <span className="portfolio-video-card__overlay">
-                  <span className="play-button" aria-hidden="true">
-                    ▶
-                  </span>
-                  <span>Vimeo</span>
-                </span>
+                {"videoEmbedUrl" in item && item.videoEmbedUrl ? (
+                  <iframe
+                    src={item.videoEmbedUrl}
+                    title={`${item.title} video player`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                ) : (
+                  <>
+                    <Image src={item.image} alt="" width={520} height={330} />
+                    <span className="portfolio-video-card__overlay">
+                      <span className="play-button" aria-hidden="true">
+                        ▶
+                      </span>
+                      <span>Vimeo</span>
+                    </span>
+                  </>
+                )}
               </div>
               <div className="portfolio-video-card__body">
                 <p>{item.category}</p>

@@ -72,7 +72,8 @@ export const siteContent = {
         description:
           "IP project listed in the legacy homepage slider as airing in 2018 for Pogo Network.",
         details:
-          "Mr.Buddy is carried into the portfolio from the Shows page as a featured animation property."
+          "Mr.Buddy is carried into the portfolio from the Shows page as a featured animation property.",
+        videoEmbedUrl: "https://www.youtube.com/embed/AUoUWoAIHXU"
       },
       {
         title: "Animation Feature Film",
@@ -84,7 +85,8 @@ export const siteContent = {
         description:
           "Animation feature film produced by Kartun Studios and presented with an in-page player.",
         details:
-          "Animation Feature Film is included from the Shows page as a featured portfolio project."
+          "Animation Feature Film is included from the Shows page as a featured portfolio project.",
+        videoEmbedUrl: "https://www.youtube.com/embed/tiHfnC2KTYg?start=156"
       },
       {
         title: "Visual Effects Breakdown",

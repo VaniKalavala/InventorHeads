@@ -820,6 +820,12 @@ img {
   transition: transform 0.35s ease;
 }
 
+.portfolio-video-card__media iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .portfolio-video-card__overlay {
   position: absolute;
   inset: 0;

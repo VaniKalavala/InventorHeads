@@ -2373,7 +2373,7 @@ body::before {
 
 .technology-market__copy > p:first-child {
   margin: 0 0 28px;
-  color: #008f87;
+  color: #626262;
   font-size: 12px;
   font-weight: 950;
   text-transform: uppercase;
@@ -2389,7 +2389,7 @@ body::before {
 }
 
 .technology-market__copy h1 span {
-  color: #08a9a1;
+  color: #626262;
 }
 
 .technology-market__copy > p:not(:first-child) {
@@ -2403,7 +2403,7 @@ body::before {
 .technology-market__copy a {
   display: inline-flex;
   margin-top: 28px;
-  color: #006fc7;
+  color: #626262;
   font-size: 14px;
   font-weight: 900;
 }
@@ -2413,7 +2413,7 @@ body::before {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   padding: clamp(44px, 5vw, 64px);
-  background: #edfafa;
+  background: #eeeeec;
 }
 
 .technology-tool {
@@ -2431,7 +2431,7 @@ body::before {
 .technology-tool span {
   display: block;
   margin-bottom: 24px;
-  color: #09aaa6;
+  color: #626262;
   font-size: 28px;
   font-weight: 950;
   line-height: 1;

@@ -15,7 +15,6 @@ export default function ServicesPage() {
           <SectionHeading
             eyebrow="Services"
             title="Production capabilities"
-            summary="A direct replacement for the old services PHP template, without query_posts or plugin-dependent image loops."
           />
           <div className="grid grid--two">
             {services.map((item) => (

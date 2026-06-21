@@ -20,8 +20,8 @@ export default function AboutPage() {
           <div className="panel">
             <h2>Cleaner content ownership</h2>
             <p>
-              About copy, team profiles, services, careers, and shows now live
-              in structured CMS fields instead of page-specific PHP loops.
+              About copy, team profiles, careers, and shows now live in
+              structured CMS fields instead of page-specific PHP loops.
             </p>
           </div>
         </div>

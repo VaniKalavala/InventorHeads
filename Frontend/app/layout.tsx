@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Inventor Heads"
   },
   description:
-    "Inventor Heads is a creative technology studio for visual effects, production services, shows, films, and workflow tools."
+    "Inventor Heads is a creative technology studio for visual effects, animation, shows, films, and workflow tools."
 };
 
 export default function RootLayout({

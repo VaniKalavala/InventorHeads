@@ -1,7 +1,7 @@
 type PageHeroProps = {
   eyebrow?: string;
   title: string;
-  summary: string;
+  summary?: string;
   image: string;
 };
 
@@ -12,7 +12,7 @@ export function PageHero({ eyebrow, title, summary, image }: PageHeroProps) {
       <div className="page-hero__content">
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
         <h1>{title}</h1>
-        <p>{summary}</p>
+        {summary ? <p>{summary}</p> : null}
       </div>
     </section>
   );

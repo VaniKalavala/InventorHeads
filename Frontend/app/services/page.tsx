@@ -9,7 +9,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <PageHero title={page.title} summary={page.summary} image={page.heroImage} />
+      <PageHero title={page.title} image={page.heroImage} />
       <section className="section section--white">
         <div className="section-inner">
           <SectionHeading

@@ -1,7 +1,6 @@
 import { siteContent } from "@/content/site";
 
 export type CollectionName =
-  | "services"
   | "technologies"
   | "careers"
   | "shows"
